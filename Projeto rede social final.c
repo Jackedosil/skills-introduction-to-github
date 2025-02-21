@@ -1,4 +1,48 @@
+Esta atividade consiste na criação de uma **rede social simples** em linguagem C, com funcionalidades básicas como:
 
+1. **Cadastro de usuários**:  
+   - O usuário insere um nome e senha.  
+   - O sistema verifica se o nome já existe e limita o número máximo de usuários.
+
+2. **Login**:  
+   - O usuário faz login com nome e senha.  
+   - Se as credenciais estiverem corretas, ele acessa o menu principal.
+
+3. **Adicionar amigos**:  
+   - O usuário pode adicionar outros usuários como amigos.  
+   - O sistema verifica se o amigo já foi adicionado e evita autoamizade.
+
+4. **Fazer postagens**:  
+   - O usuário logado pode publicar textos.  
+   - Cada postagem é armazenada com um **timestamp** (data e hora).
+
+5. **Visualizar feed**:  
+   - O usuário pode ver as postagens de seus amigos, exibidas em ordem cronológica.  
+   - Se não tiver amigos, o sistema informa que é necessário adicionar amigos para ver postagens.
+
+6. **Menu de navegação**:  
+   - O programa possui um **menu principal** (cadastro, login, sair) e um **menu do usuário** (adicionar amigos, postar, ver feed, sair).
+
+### Como funciona:
+- Os dados são armazenados em **estruturas** (`struct`), como `Usuario` e `Postagem`.
+- O sistema usa **arrays estáticos** para gerenciar usuários, amigos e postagens.
+- A interação com o usuário é feita via terminal, com entradas e saídas simples.
+
+### Objetivo:
+O código serve como uma **base** para uma rede social, podendo ser expandido com mais funcionalidades, como:
+- Remover amigos.
+- Curtir postagens.
+- Comentários.
+- Mensagens privadas.
+- Persistência de dados em arquivos.
+
+### Como executar:
+O código pode ser compilado e executado em um ambiente com compilador C (como GCC):
+```bash
+gcc rede_social.c -o rede_social && ./rede_social
+```
+
+Em resumo, a atividade demonstra a criação de um **sistema básico de rede social** em C, com foco em gerenciamento de usuários, postagens e interações sociais.
 
 //Bibliotecas
 #include <stdio.h>
