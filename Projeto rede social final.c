@@ -1,5 +1,4 @@
-// Grupo: Maycon Rodrigo, João Victor, David Gabriel, Jhonatan Mendes e Guilherme Bonfim
-//Projeto - Rede Social
+
 
 //Bibliotecas
 #include <stdio.h>
